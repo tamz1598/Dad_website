@@ -358,6 +358,10 @@ body {
     font-size: 40px !important;
     width: 270px !important;
   }
+  
+  .restaurant {
+    width: 300px !important;
+  }
 
 }
 
