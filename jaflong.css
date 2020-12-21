@@ -406,7 +406,7 @@ body {
 @media only screen and (min-width: 360px) and (max-width:600px) {
 
   .content {
-    max-width: none !important;
+    max-width: 400px !important;
     min-width: none !important;
   }
 
