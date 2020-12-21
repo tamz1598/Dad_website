@@ -407,7 +407,7 @@ body {
 
   .content {
     max-width: none !important;
-    min-width: 400px !important;
+    min-width: none !important;
   }
 
   .Title_Menu {
