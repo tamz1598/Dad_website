@@ -353,6 +353,11 @@ body {
     max-width: none !important;
     min-width: 200px !important;
   }
+  
+   .jumbo {
+    font-size: 40px !important;
+    width: 270px !important;
+  }
 
 }
 
