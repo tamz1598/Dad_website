@@ -362,6 +362,11 @@ body {
   .restaurant {
     width: 250px !important;
   }
+  
+  h1, p {
+    margin-right: 30px !important;
+    padding-right: 10px !important;
+  }
 
 }
 
