@@ -557,12 +557,12 @@ p4 {
 }
 
 .jumbo {
-  font-size: 64px !important;
+  font-size: 64px;
 }
 
 h1 {
   font-family: 'Neucha', cursive;
-  font-size: 26px !important;
+  font-size: 26px;
 }
 
 .styleh1 {
