@@ -1,848 +1,965 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1; user-scalable=0">
-<link rel="stylesheet" type="text/css" href="jaflong.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script type = "text/javascript" src="jaflong.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type = "text/javascript" src="jaflong.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jaflong Letchworth</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
+
+    <!--
+      - Bacasime font
+    -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+  <!--
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/jaflong-banner.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/jaflong-banner-bg.png" media="min-width(768px)">
+  <link rel="preload" as="image" href="./assets/images/jaflong-bg.jpg">
 
 </head>
 
-<body>
+<body id="top">
 
-<!-- Navbar (sit on top), fixed position -->
-<div class="Navbar">
-  <div class="Navbar_design opacity_nav" id="myNavbar">
-    <a href="#" class="bar_item button">HOME</a>
-    <a href="#Menu" class="bar_item button">MENU</a>
-    <a href="#about" class="bar_item button">ABOUT</a>
-    <a href="#myMap" class="bar_item button">CONTACT</a>
-  <div class="logo_button">
-    <a href="#" class="bar_item_j button"><img src="images/jaflong_logo_new.png"></a>
-  </div>
- <div class="dropdown">
-   <a href="javascript:void(0)" class="three_bar" onclick="me_open()">
-     <i class="fa fa-bars"></i>
-   </a>
-</div>
+  <!--
+    - #HEADER
+  -->
 
-<!-- Sidebar on small screens when clicking the menu icon -->
+  <header class="header" data-header>
+    <div class="container">
 
-</div>
-<nav id="show" class="dropdown-content">
-  <a href="javascript:void(0)" onclick="me_close()" class="bar_item_c button Close">Close ×</a>
-  <p1><a href="#" onclick="me_close()" class="bar_item button">HOME</a></p1>
-  <br>
-  <p1><a href="#Menu" onclick="me_close()" class="bar_item button">MENU</a></p1>
-  <br>
-  <p1><a href="#about" onclick="me_close()" class="bar_item button">ABOUT</a></p1>
-  <br>
-  <p1><a href="#myMap" onclick="me_close()" class="bar_item button">CONTACT</a></p1>
-</nav>
+      <h1>
+        <a href="#" class="logo">jaflong<span class="span">.</span></a>
+          <a href="tel:01462 487 314" class="number">01462 487 314  or  315</a>
+      </h1>
 
-</div>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
 
-<!-- When you click on the nav button it takes it straight to that section -->
-<!-- This is done because the href(link) and the id of that section are the same -->
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
 
-<!-- Header with image -->
-<header class="background_image_container" id="home">
-  <div class="Opening_Times">
-    <span class="Opening_Times_Box">OPEN <p3>6</p3> Days A Week <br>Seasonal Mondays - open</br><br>28/06/2023 - closed</br></span>
-    <br></br>
-    <span class="Opening_Times_Box2">SUN - THURS > 5.30<p4>pm</p4> TO 11.00<p4>pm</p4></span>
-    <span class="Opening_Times_Box2">FRI - SAT > 5.30<p4>pm</p4> TO 11.30</span>
-    <br></br>
-    <span class="Opening_Times_Box3">01462 487 <p3>314</p3></span>
-    <br><br>
-    <span class="Opening_Times_Box3">01462 487 <p3>315</p3></span>
-  </div>
-  <div class="Logo_Title">
-    <div class="Title_box">
-    <img src="images/jaflong_logo_new.png">
-  </div>
-    <span class="Sub_Title">BALTI CUISINE</span>
-  </div>
-  <div>
-    <p><a href="#Menu" class="Menu_button">LET ME SEE THE MENU</a></p>
-  </div>
-</header>
+          <li class="nav-item">
+            <a href="#about" class="navbar-link" data-nav-link>About Us</a>
+          </li>
 
-<!-- Menu Container -->
-<div class="Container" id="Menu">
-  <div class="content">
+          <li class="nav-item">
+            <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
+          </li>
 
-    <h1 class="center jumbo styleh2" style="margin-bottom:64px">THE MENU</h1>
-    <div class="meal_box">
-      <p5 class="red1 meal_box2">NO DISCOUNT ON SET MEALS - Only <i>ONE</i> change per meal</p5>
-      <br>
-      <br>
-      <p6 class="red1 meal_box3">SET MEAL 1 (for 1 person)</p6>
-      <p> Starter: <b>2 Papadoms, Chicken Tikka</b></p>
-      <p> Main Dish: <b>Chicken Korma or Chicken Bhuna</b></p>
-      <p> Side Dish: <b>Bombay Aloo, Pilau Rice or Nan</b></p>
-      <p class="red">£17.00</p>
-      <hr>
-      <p6 class="red1 meal_box3">SET MEAL 2 (for 2 people)</p6>
-      <p> Starter: <b>1 Plain Papadoms, 1 Spicy Papadoms, 1 Vegetable Samosa, Sheek Kebab</b></p>
-      <p> Main Dish: <b>Chicken Tikka Mossala or Chicken Tikka Rogon</b></p>
-      <p> Side Dish: <b>Mushroom Curry, Sag Aloo & 2 Pilau Rice</b></p>
-      <p class="red">£34.00</p>
-      <hr>
-      <p6 class="red1 meal_box3">DRINKS</p6>
-      <h1><b>Cans </b> <span class="right tag dark-grey round">£1.50</span></h1>
-      <h1><b>1.5L Coke </b> <span class="right tag dark-grey round">£3.00</span></h1>
-      <hr>
-    </div>
 
-    <div class="Title_Menu">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Specials');" id="myLink">
-        <div class="col s4 tablink padding-large hover-red">Specials</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Chefs Specials');">
-        <div class="col s4 tablink padding-large hover-red">Chefs Specials</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Dishes');">
-        <div class="col s4 tablink padding-large hover-red">Dishes</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Other');">
-        <div class="col s4 tablink padding-large hover-red">Other</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Extra');">
-        <div class="col s4 tablink padding-large hover-red">Extra</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="col s4 tablink padding-large hover-red">Starter</div>
-      </a>
-    </div>
+          <li class="nav-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
 
-    <div id="Specials" class="container menu">
-      <h4><b>Tandoori Specials</b> <span class="right tag dark-grey round"></span></h4>
-      <p class="text-grey des"><i>Prepared in clay oven. Marinated in a delightful delicate spiced yoghurt for 24 hours to tenderise the meat/chicken and give it a seductive flavour and tantalising aroma served with salad and mint sauce.</i></p>
-      <br>
-      <h1><b>Chicken Tikka </b> <span class="right tag dark-grey round">£8.00</span></h1>
-      <p class="text-grey">(main)</p>
-      <hr>
+        </ul>
+      </nav>
 
-      <h1><b>Lamb Tikka</b> <span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
 
-      <h1><b>Tandoori Chicken</b> <span class="right tag dark-grey round">£7.00</span></h1>
-      <p class="text-grey">(half)</p>
-      <hr>
+        <button id="myBtn_menu" class="btn btn-hover">Menu</button>
 
-      <h1><b>Tandoori Chicken</b> <span class="right tag dark-grey round">£13.00</span></h1>
-      <p class="text-grey">(full)</p>
-      <hr>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-      <h1><b>Sheek Kebab</b> <span class="right tag dark-grey round">£7.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="image_menu" src="./assets/images/picture.jpg">
+          </div>
 
-      <h1><b>Chicken Shashlick</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked with onions, tomatoes and green pepper</p>
-      <hr>
-      
-      <h1><b>Lamb Shashlick</b><span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey">Cooked with onions, tomatoes and green pepper</p>
-      <hr>
+        </div>
 
-      <h1><b>Tandoori King Prawn</b><span class="right tag dark-grey round">£13.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
 
-      <h1><b>Tandoori Mixed Grill</b><span class="right tag dark-grey round">£12.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Fish Shashlick</b><span class="right tag dark-grey round">£10.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h4><b>Jaflong Specials</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Murghi Voujon </b><span class="tag orange round">Medium/ Hot!</span> <span class="right tag dark-grey round">£9.50</span></h1>
-      <p class="text-grey">Tandoori chicken, stripped off the bone cooked with mushrooms</p>
-      <hr>
-
-      <h1><b>Chicken Jalfrezi</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked with green chillies, tomatoes, onions, special herbs and spices</p>
-      <hr>
-
-      <h1><b>Chicken Mohonwala</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Mild spicy marinated chicken in spices & herbs with coconut, cooked in cheese </p>
-      <hr>
-
-      <h1><b>Taba Chicken </b><span class="tag green round">Mild</span> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Marinated in spice & herbs, cooked with fresh yoghurt and ginger, topped with dressing of capsicum</p>
-      <hr>
-
-      <h1><b>Peshwari Chicken </b><span class="tag green round">Mild</span> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked with desiccated coconut, honey and sliced almond</p>
-      <hr>
-
-      <h1><b>Chicken Tikka Palak</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Spinach, fresh green chillies</p>
-      <hr>
-
-      <h1><b>Chicken Razella</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked with onion and green peppers in a delicate medium sauce</p>
-      <hr>
-
-      <h1><b>Chicken Tikka Massala</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Spring chicken marinated in spices and herbs, cooked with special sauce, topped with green chillies</p>
-      <hr>
-    </div>
-
-    <div id="Chefs Specials" class="container menu">
-      <h1><b>Chicken Tikka Murichia</b> <span class="tag red round">Hot</span><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked with green peppers, fried onions, chopped green chillies with special tandoori sauce.</p>
-      <hr>
-
-      <h1><b>Chicken Naga</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked in spices & herbs with curshed aromatic Bangladeshi chillies</p>
-      <hr>
-
-      <h1><b>Kohinoor chicken</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Chicken Tikka cooked in spicy hot mango sauce</p>
-      <hr>
-
-      <h1><b>Chicken Tikka Mossala</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Pieces of spring chicken marinated in spices and herbs cooked with special sauce</p>
-      <hr>
-
-      <h1><b>Butter chicken</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked in rich butter sauce with mild spices, almonds and coconut</p>
-      <hr>
-
-      <h1><b>Chicken Passanda</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Thin fillet lamb or chicken marinated in spices and yoghurt cooked in creamy sauce</p>
-      <hr>
-
-      <h1><b>Black pepper chicken</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Marinated chicken or lamb cooked in black pepper & oyster sauce with mushrooms, onions & green peppers</p>
-      <hr>
-
-      <h1><b>Chicken laziz</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked in mild spices with cubes of cheese & fried onion</p>
-      <hr>
-
-      <h1><b>Shahi mixed</b> <span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey">On the bone tandoori chicken, chicken tikka, lamb tikka and sheek kebab, cooked in a sauce of your choice</p>
-      <hr>
-
-      <h1><b>Chicken rojoti</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Thin fillet chickn cooked with minced meat</p>
-      <hr>
-
-      <h1><b>Chicken korhi</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked in kohri with green peppers, onions and tomatoes</p>
-      <hr>
-
-      <h1><b>Chicken bombay</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Medium special chicken cooked with boiled egg and potatoes</p>
-      <hr>
-
-      <h1><b>King prawn chilli mossala</b> <span class="right tag dark-grey round">£12.95</span></h1>
-      <p class="text-grey">Cooked with resh green chillies and onions</p>
-      <hr>
-
-      <h1><b>Jeera chicken</b> <span class="tag orange round">Medium/ Hot!</span><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked in a very rich flavoured sauce with cumin seeds</p>
-      <hr>
-
-      <h1><b>Garlic chicken tikka mushroom</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Medium special chicken tikka cooked with spices and garnished with garlic, onion and coriander</p>
-      <hr>
-
-      <h1><b>Duck Jalfrezi</b> <span class="right tag dark-grey round">£10.95</span></h1>
-      <p class="text-grey">Succulent duck cooked with green chillies, tomatoes, onions, special herbs and spices</p>
-      <hr>
-
-      <h1><b>Keema bhuna</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Minced meat cooked in various spices</p>
-      <hr>
-
-      <h1><b>Chana gosht</b> <span class="right tag dark-grey round">£7.95</span></h1>
-      <p class="text-grey">Chick peas and tender lamb cooked in thick spicy sauce</p>
-      <hr>
-
-      <h1><b>Chicken Nagma</b> <span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Cooked in special medium sauce, topped with a layer pf sultanas, almonds and coconut sauce</p>
-      <hr>
-
-      <h1><b>Tandoori king prawn mossala</b> <span class="right tag dark-grey round">£13.95</span></h1>
-      <p class="text-grey">Marinated in spices and herbs cooked with special sauce</p>
-      <hr>
-    </div>
-
-    <div id="Dishes" class="container menu">
-      <h4><b>Jaflong Balti Dishes</b> <span class="right tag dark-grey round"></span></h4>
-      <p class="text-grey des"><i>These dishes are served with pilau rice or nan bread. Balti dishes are highly flavoured, cooked with fresh herbs and spcial Balti spices.</i></p>
-      <br>
-      <h1><b>Chicken or Lamb tikka balti </b><span class="right tag dark-grey round">£12.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chicken or Lamb balti</b> <span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Prawn balti</b> <span class="right tag dark-grey round">£12.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>King prawn balti</b> <span class="right tag dark-grey round">£14.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable balti</b><span class="right tag dark-grey round">£9.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Duck balti</b> <span class="right tag dark-grey round">£12.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Jaflong balti</b> <span class="right tag dark-grey round">£12.00</span></h1>
-      <p class="text-grey">Cocktail of chicken tikka, lamb tikka and prawns</p>
-      <hr>
-
-      <h1><b>Fish balti</b> <span class="right tag dark-grey round">£11.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h4><b>Traditional Dishes</b> <span class="right tag dark-grey round"></span></h4>
-      <p class="text-grey des"><i>Brown --> chicken</i></p>
-      <p class="text-grey des"><i>Light Brown --> Lamb</i></p>
-      <p class="text-grey des"><i>Pink --> Prawn</i></p>
-      <p class="text-grey des"><i>Red/Pink --> King Prawn</i></p>
-      <br>
-      <h1><b>Curry</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.00</span><span class="right tag Brown round">£7.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Madras or Vindaloo</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Phall</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Korma</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Mild spice and creamy</p>
-      <hr>
-
-      <h1><b>Bhuna</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Medium spices fairly dry</p>
-      <hr>
-
-      <h1><b>Dhansak</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Sweet and sour, slightly hot with spices and herbs</p>
-      <hr>
-
-      <h1><b>Dupiaza</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Medium spices with onions & green peppers</p>
-      <hr>
-
-      <h1><b>Pathia</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Slightly hot, sweet and sour with thick gravy</p>
-      <hr>
-
-      <h1><b>Malaya</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Mild cooked with pineapple</p>
-      <hr>
-
-      <h1><b>Rogon Josh</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Medium hot cooked with spices and garnished with tomatoes</p>
-      <hr>
-
-      <h1><b>Sag</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Medium spices with fresh spinach</p>
-      <hr>
-
-      <h1><b>Methi</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Medium spices with fenugreek</p>
-      <hr>
-
-      <h1><b>Garlic</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Medium with garlic</p>
-      <hr>
-
-      <h1><b>Ceylon</b><span class="right tag Red_Pink round">£11.95</span><span class="right tag Pink round">£9.00</span><span class="right tag LBrown round">£8.50</span><span class="right tag Brown round">£7.50</span></h1>
-      <p class="text-grey">Fairly hot with coconut</p>
-      <hr>
-
-      <p class="text-grey ">CHICKEN or LAMB tikka  £1.00 EXTRA</p>
-      <p class="text-grey ">ANY dishes in BALTI style £2.00 EXTRA</p>
-    </div>
-
-    <div id="Other" class="container menu">
-      <h4><b>Vegetable Main Dishes</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Vegetable Jalfrezi</b><span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Korma</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Mossala</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Bhuna</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Peshwari</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Dhansak</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chuto Aloo Korma</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey">baby potato</p>
-      <hr>
-
-      <h1><b>Chuto Aloo Bhuna</b> <span class="right tag dark-grey round">£6.50</span></h1>
-      <p class="text-grey">baby potato</p>
-      <hr>
-
-      <h4><b>Vegetable Side Dishes</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Mixed Vegetable Curry</b><span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Mixed Dry Vegetable</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Cauliflower or Mushroom Bhaji</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Bindi or Brinjal Bhaji</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Sag Bhaji</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Bombay Aloo</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Tarka Dhal</b> <span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Sag Aloo</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Aloo Gobi or Peas</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Motor, Sag or Mushroom Ponir</b> <span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Bombay Chat</b> <span class="right tag dark-grey round">4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Beans Bhaji</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Sag Dall</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Aloo Chana</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Garlic Mushroom</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Dhal Samba</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h4><b>English Dishes</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Prawn Omelette</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey">Plus Chips</p>
-      <hr>
-
-      <h1><b>Mushroom Omelette</b><span class="right tag dark-grey round">£8.50</span></h1>
-      <p class="text-grey">Plus Chips</p>
-      <hr>
-
-      <h1><b>Chicken Omelette</b><span class="right tag dark-grey round">£9.50</span></h1>
-      <p class="text-grey">Plus Chips</p>
-      <hr>
-
-      <h1><b>Chips</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-    </div>
-
-    <div id="Extra" class="container menu">
-      <h4><b>Sea Food</b> <span class="right tag dark-grey round"></span></h4>
-      <p class="text-grey des"><i>We have tried our best to ensure all bones have been removed for you safety. We hope you will take care while enjoying this dish as there can beodd bones remaining.</i></p>
-      <h1><b>Fish Razella</b><span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Fish Mossala</b> <span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Fish Bhuna</b> <span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Fish Murichia</b> <span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h4><b>Biryani</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Jaflong Biryani</b><span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey">With Chicken, Prawn & Lamb</p>
-      <hr>
-
-      <h1><b>Chicken & Lamb Biryani</b><span class="right tag dark-grey round">£9.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chicken & Lamb Tikka Biryani</b><span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Prawn Biryani</b><span class="right tag dark-grey round">£10.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>King Prawn Biryani</b><span class="right tag dark-grey round">£12.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable or Mushroom Biryani</b><span class="right tag dark-grey round">£8.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Persian Chicken or Lamb Biryani</b><span class="right tag dark-grey round">£10.95</span></h1>
-      <p class="text-grey">Cooked with Almonds, nuts and sultanas. Egg Omelette on top.</p>
-      <hr>
-
-      <h4><b>Rice Dishes</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Plain Rice</b><span class="right tag dark-grey round">£2.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Pilau Rice</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Special Fried Rice</b><span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey">Cooked with spices, egg, peas & carrots</p>
-      <hr>
-
-      <h1><b>Egg Fried Rice</b><span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Mushroom Rice</b><span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Rice</b><span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Keema Rice</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey">Cooked with minced meat</p>
-      <hr>
-
-      <h1><b>Garlic Rice</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chana Rice</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey">Chick Peas</p>
-      <hr>
-
-      <h1><b>Lemon Rice</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Shahi Pilau Rice</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey">An aromatic rice with nuts & sultanas.</p>
-      <hr>
-
-      <h4><b>Sundries</b> <span class="right tag dark-grey round"></span></h4>
-      <h1><b>Plain Nan</b><span class="right tag dark-grey round">£2.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Peshwari Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Keema Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Kulcha Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Garlic Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Tikka Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chilli Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Cheese Nan</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Paratha</b><span class="right tag dark-grey round">£3.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Stuffed Paratha</b><span class="right tag dark-grey round">£3.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chapati</b><span class="right tag dark-grey round">£2.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Plain Papadom</b><span class="right tag dark-grey round">£1.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Spiced Papadom</b><span class="right tag dark-grey round">£1.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chutney, Pickles or Mint Sauce</b><span class="right tag dark-grey round">£0.70</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Red Onion</b><span class="right tag dark-grey round">£1.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Cucumber or Onion Raitha</b><span class="right tag dark-grey round">£2.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h4><b>Nan Rolls</b> <span class="right tag dark-grey round"></span></h4>
-      <p class="text-grey des"><i>All rolls come with salad and mint sauce. Curry rolls with no salad, no mint sauce.</i></p>
-      <h1><b>Chicken or Lamb Tikka Roll</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Sheek Kebab Roll</b><span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Korma Roll</b><span class="right tag dark-grey round">£6.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Madras Roll</b><span class="right tag dark-grey round">£6.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Vegetable Roll</b><span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-    </div>
-
-
-    <div id="Starter" class="container menu">
-
-      <p class="text-grey des"><i>Served with salad and mint sauces.</i></p>
-
-      <h1><b>Onion Bhaji</b> <span class="right tag dark-grey round">£3.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>meat or Vegetable Samosa</b> <span class="right tag dark-grey round">£3.80</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Sheek or Shami Kebab</b> <span class="right tag dark-grey round">£3.80</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Reshmi Kebab</b> <span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chicken Pakora</b> <span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chicken Chatt Puree</b> <span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Tandoori Chicken</b> <span class="right tag dark-grey round">£3.80</span></h1>
-      <p class="text-grey">On the bone</p>
-      <hr>
-
-      <h1><b>Chicken Tikka</b> <span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Lamb Tikka</b> <span class="right tag dark-grey round">£5.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Prawn puree</b> <span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>King Prawn puree</b> <span class="right tag dark-grey round">£6.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>King Prawn Butterfly</b> <span class="right tag dark-grey round">£6.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Garlic Mushroom Puree</b> <span class="right tag dark-grey round">£4.20</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Chicken or Lamb Momo</b> <span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Mixed Kebab</b> <span class="right tag dark-grey round">£5.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Prawn Cocktail</b> <span class="right tag dark-grey round">£4.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Stuffed Pepper</b> <span class="right tag dark-grey round">£4.50</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-
-      <h1><b>Kakra Crab</b> <span class="right tag dark-grey round">£5.00</span></h1>
-      <p class="text-grey"></p>
-      <hr>
-    </div>
-
-  </div>
-</div>
-
-
-<!-- About Container -->
-<div class="Container padding-64 color xlarge" id="about">
-  <div class="content">
-    <h1 class="center jumbo styleh1" style="margin-bottom:64px">About</h1>
-    <p class="style2">Jaflong Balti Cuisine, inspired by the famous waterfall found in Bangladesh under the same name, specialises in serving exquisite Indian/ Bangladeshi styled balti dishes.</p>
-    <p class="style2"><strong>The Head Chef? </strong> Mr. Aklim Hussain <img src="images/dad.jpg" style="width:130px" class="circle right" alt="Chef"></p>
-    <p class="style2">Please note that any dishes not on the menu, can be prepared on request :)</p>
-    <img src="images/restaurant.jpg" style="width:100%" class="margin-top margin-bottom restaurant" alt="Restaurant">
-    <h1><b>Opening Hours</b></h1>
-
-    <div class="row">
-      <div class="col s6">
-        <p>Mon (below) CLOSED</p>
-        <p>Tuesday 05.30 - 11.00</p>
-        <p>Wednesday 05:30 - 11:00</p>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
       </div>
-      <div class="col s6">
-        <p>Thursday 05:30 - 11:00</p>
-        <p>Fri (& Sat) 05:30 - 11:30</p>
-        <p>Sunday 05:30 - 11:00</p>
+
+    </div>
+  </header>
+
+
+
+
+
+  <!--
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-container>
+
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..."
+        class="search-input">
+
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!--
+        - #jaflong
+      -->
+
+      <section class="jaflong" id="home" style="background-image: url('./assets/images/jaflong-bg.jpg')">
+        <div class="container" id="tower">
+
+          <div class="jaflong-content">
+
+           <div class="box">
+            <p class="jaflong-subtitle" id=days_open><br>Open 6 Days A Week</br>
+              <br>Seasonal Mondays - open</br></p>
+          </div>
+
+
+            <h2 class="h1 jaflong-title"><br>Sun - Thurs > 5:30pm to 11:00pm</br>
+            Fri - Sat > 5:30pm to 11:30pm</h2>
+
+
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #PROMO
+      -->
+
+      <section class="section section-divider white promo">
+        <div class="container">
+
+          <ul class="promo-list has-scrollbar">
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1007.58 659.65" width="60" height="60">
+                    <defs><style>.cls-1{stroke-width:28px;}.cls-1,.cls-2{fill:none;stroke:#d82829;stroke-miterlimit:10;}.cls-3{fill:#d82829;}.cls-2{stroke-width:34px;}</style></defs><path class="cls-3" d="m770.14,242.71l-48.46-67.59,122.52-87.87-2.49-43.11c-1.3-22.89,16.25-42.58,39.12-43.9l3.11-.18c22.85-1.33,42.58,16.22,43.9,39.11l2.44,42.3,26.36,6.72c10.77,2.75,19.82,9.52,25.49,19.07,5.67,9.54,7.28,20.71,4.54,31.46l-.76,3c-2.76,10.8-9.53,19.85-19.08,25.52-9.55,5.68-20.75,7.29-31.51,4.54l-48.91-12.46-116.28,83.38Zm-3.81-60.23l11.17,15.58,102.39-73.42,63.36,16.14c2.48.63,5.06.26,7.26-1.04,2.2-1.31,3.77-3.4,4.4-5.88l.76-3c.63-2.48.26-5.05-1.04-7.25-1.31-2.2-3.4-3.77-5.88-4.4l-49.06-12.5-3.78-65.68c-.3-5.27-4.86-9.31-10.12-9.01l-3.11.18c-5.26.3-9.31,4.85-9.01,10.13l3.5,60.68-110.83,79.48Z"/><path class="cls-2" d="m780.97,236.98l-70.12,84.25c-14.51,61.48-34.87,110.01-61.79,144.06-.02.03-.04.06-.07.09-10.2,13.52-22.78,25.66-37.61,35.76-71.1,48.43-166.97,31.57-214.13-37.67-47.15-69.23-27.73-164.62,43.37-213.04,2.73-1.86,5.49-3.62,8.28-5.28.01,0,.02,0,.02-.01,33.25-23.54,93.67-31.9,173.55-29.38l112.54-38.88,45.96,60.1Z"/><path class="cls-3" d="m166.14,523.04c-40.15,0-77.06-20.41-107.37-59.55-23.97-30.95-35.41-62.8-35.89-64.14l-.92-2.59v-88.87l.75-2.36c27.16-85.77,66.82-153.34,117.85-200.85,44.15-41.09,97.13-67.6,157.48-78.78,89.8-16.64,179.26,3.9,238.5,24.06,35.67,12.14,63.7,25.16,80.94,33.95,12.1,6.17,33.21,17.53,38.62,24.31,1.44,16.41-6.9,23.06-25.02,19.95.64.8,1.13,1.23,1.15,1.25-6.16-5.3-54.35-33.49-122.47-54.51-59.6-18.39-148.49-35.25-233.45-11.12-104.02,29.55-178.83,113.34-222.37,249.05v78.21c2.96,7.45,13.1,31.07,30.58,53.47,26.4,33.8,56.71,49.33,90.1,46.12l.76-.07h603.84c30.45-6.74,112.64-32.47,121.51-69.1,4.53-18.71-13.24-38.98-30.32-53.52-6.72-1.14-20-3.57-33.63-7.16-32.8-8.65-47.84-18.63-50.29-33.36,2.92-15.17,14.16-15.65,31.56-5.26-.32-1.92-1.15-3.15-1.44-3.46.21.23,5.52,5.61,33.17,12.37,15.51,3.79,29.73,5.93,29.87,5.96l4.35.65,3.41,2.78c36.52,29.8,51.46,59.6,44.43,88.58-6.87,28.28-34.5,52.67-82.13,72.49-33.15,13.79-64.15,20.42-65.45,20.69l-1.63.34H176.92c-3.62.32-7.21.48-10.78.48Z"/><path class="cls-1" d="m253.72,595.29H118.98s3.54,42.53,35.72,50.36h693.86s39.66-16.38,40.94-50.36H316.4"/><path class="cls-1" d="m253.72,572.83H34.97s-47.18-15.58,0-49.8h931.28s57.48,22.93,5.71,60.03H316.22"/></svg>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title">Chicken</h3>
+
+                <p class="card-text">
+                  Generally, Prepared in clay oven. Marinated in a delightful delicate spiced yoghurt for 24 hours to tenderise the chicken and give it a seductive flavour and tantalising aroma served with salad and mint sauce.
+                </p>
+
+                <img src="./assets/images/t_chicken.png" width="300" height="300" loading="lazy" alt="Chicken"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 618.53 609.99" width="60" height="60">
+              <defs><style>.cls-1{stroke-width:17px;}.cls-1,.cls-2,.cls-3{fill:none;stroke:#d9272a;stroke-miterlimit:10;}.cls-2{stroke-width:11px;}.cls-3{stroke-width:18px;}</style></defs><path class="cls-2" d="m353.09,331.05s16.45-83.63-9.6-113.1l-47.3-13.02v19.19l-52.1-11.65v23.99s-23.31,12.34-27.42,2.74c0,0-17.82-21.94-36.33-9.6s-15.08,32.22-15.08,32.22l-44.56,13.71s97.34,66.49,232.37,55.52Z"/>
+              <circle class="cls-2" cx="193.51" cy="255.4" r="13.2"/><path class="cls-2" d="m362.68,204.92s9.6,5.48,10.97,22.62,0,104.73,0,104.73c0,0,57.58-3.96,60.32-10.13v-95.97s-3.43-30.16-13.71-34.96l-57.58,13.71Z"/><path class="cls-2" d="m440.14,191.21s15.77,15.08,15.08,32.9.02,95.28.02,95.28c0,0,32.2-6.17,47.96-80.2v-47.98s-25.36-11.65-63.06,0Z"/><path class="cls-2" d="m525.83,197.38s56.89,25.21,67.86,64.36c0,0-19.88,48.06-113.79,78.9,0,0,55.52-52.1,45.93-143.26Z"/><path class="cls-2" d="m489.5,360.52s67.18-10.97,113.79-76.09c0,0,21.94,38.49,0,80.25,0,0-29.48,30.11-113.79,10.23v-14.39Z"/><path class="cls-2" d="m483.33,394.8s67.18,24.68,122.01-8.23l-28.79,59.64s-76.77,0-93.22-51.41Z"/><path class="cls-2" d="m479.9,427.01s25.36,39.76,82.94,40.44l-26.05,27.42s-46.61,0-60.32-38.39l3.43-29.48Z"/><path class="cls-2" d="m458.65,466.09s10.28,31.53,37.02,41.81l-121.33,79.51s-43.87,29.48-54.84,10.97,28.1-41.13,28.1-41.13c0,0-47.13,8.27-47.98-5.48-1.24-20.06,89.68-71.46,159.03-85.68"/><path class="cls-2" d="m464.61,355.87v22.14s-21.15-3.94-20.66,41.32c0,0-11.31,13.77-15.25,0s-1.48-50.67,35.91-63.46Z"/><path class="cls-2" d="m450.34,344.06s-45.75,14.27-44.77,68.38c0,0-17.71,13.01-13.77-21.78,0,0,7.38-51.02,58.54-46.6Z"/><path class="cls-3" d="m333.43,353.9h13.28v39.85s-2.05,22.51-24.1,24.93c-24.71,0-67.92.64-67.92.64-11.31-.4-14.15,6.14-13.75,20.18.26,11.16-.49,16.73-.49,16.73-1.67,7.15-10.98,15-16.23,0v-25.09c.51-15.61,7.86-31.66,29.02-29.52,19.09,1.93,57.56-1.48,57.56-1.48,0,0,19.68,1.2,22.14-9.48l.49-36.76Z"/><path class="cls-1" d="m290.83,352.05h18.17v16.47s-1.45,17.44-14.78,15.99-88.19.09-88.19.09c-7.76.14-15.99,3.55-14.78,19.05v15.51c.65-.6-7.17,21.56-16.47,0v-25.2s-.73-28.76,26.16-29.28,88.91,0,88.91,0c0,0,2.91-3.19.97-12.63Z"/><path class="cls-3" d="m180.32,328.93l-116.28,3.34c-56.97-6.05-61.67-56.28-49.67-92.04,0,0,16.89-69.42,122.46-121.48s157.63-64.6,157.63-64.6l89.66-41.94s15.43-7.23,15.91,0-6.27,12.05-6.27,12.05l-94,45.8s-121.48,42.42-189.93,86.77c0,0-57.36,32.78-71.83,77.13-10.08,36.32-2.99,89.15,38.08,81.47,29.1-7.83,89.87-9.16,104.23,13.5Z"/><path class="cls-1" d="m131.53,307c-48.68-4.96-91.91-13.16-69.9-60.02,0,0,13.98-41.46,69.9-68.93s67.97-32.78,152.81-46.28,94.97-15.91,94.97-15.91c0,0,55.46-9.16,123.9-48.21,0,0,15.89-3.86,11.07,10.12s-68.45,34.23-68.45,34.23c0,0-45.31,20.73-184.63,39.05,0,0-118.86,12.31-176.43,87.25,0,0-17.37,20.82.48,43.87,7.14,11.68,27.53,17.92,46.28,24.83Z"/></svg>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title" id="seafood_title">Seafood</h3>
+
+                <p class="card-text" id="seafood_text">
+                Generally, Prepared in clay oven. Marinated in a delightful delicate spiced yoghurt for 24 hours to tenderise the chicken and give it a seductive flavour and tantalising aroma served with salad and mint sauce.
+                </p>
+
+                <img src="./assets/images/king_prawn.png" width="300" height="300" loading="lazy" alt="Seafood"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                  <?xml version="1.0" encoding="UTF-8"?>
+                  <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 949.06 915.61" width="60" height="60">
+                    <defs><style>.cls-1{fill:#d9272a;}.cls-2{fill:none;stroke:#d9272a;stroke-miterlimit:10;stroke-width:11px;}</style></defs><path class="cls-1" d="m170.88,565.79c-22.6,0-46.99-3.5-70.73-13.44-44.26-18.52-76.97-55.5-97.21-109.9-5.33-14.06-6.11-72.01,21.59-118.67,20.59-34.7,52.99-56.05,94.31-62.38-6.24-24.59-10.98-72.92,28.02-119.23,13.03-1.63,20.16,3.2,19.59,16.49-43.57,51.73-19.86,106.23-18.83,108.52l7.63,16.98-18.57,1.09c-37.55,2.11-66.26,16.97-85.36,44.19-28.08,40.02-27,94.5-24.59,103.53l.2.54c17.65,47.43,45.56,79.45,82.95,95.15,58.53,24.58,124.83,2.81,143.17-4.18,3.96-7.43,12.35-15.85,25.3-25.42,29.25-21.62,57.82-10.29,59.02-9.8l.89.37.83.5c17.12,10.15,68.74,30.19,141.32,33.34,89.98,3.88,167.83-48.94,168.61-49.47l11.97-8.24,6.68,12.91c18.28,28.15,35.1,44.77,46.17,48.26,15.08,4.76,75.68,9.97,107.24.99,25.28-7.19,46.89-19.84,64.23-37.59,28.27-28.95,35.95-61.78,36.63-64.91,6.51-45.14-7.51-83.85-41.66-115.04-26.11-23.84-54.21-34.02-54.49-34.12l-10.24-3.64,1.93-10.69c12.05-66.75-26.09-108.21-27.72-109.95-30.61-31.79-67.26-48-108.87-48.12-31.58-.06-54.45,9.58-54.68,9.68l-13.37,5.74-4.03-13.97c-.93-3.12-24.23-77.81-129.18-79.68-44.11-.78-79.78,12.49-106.03,39.45-19.82,20.35-26.75,41.41-26.82,41.62l-4.44,13.81-13.16-6.08c-67.25-31.32-122.11,9.25-124.42,10.99-16.17-.1-21.15-7.01-15.55-20.34,2.65-2.03,62.63-46.97,138.54-18.96,4.8-9.8,13.18-23.93,26.55-37.92C375.92,25.6,415.35-1.12,480.08.04c64.6,1.15,102.74,27.43,123.37,49.27,12.75,13.5,20.56,27.01,24.99,36.42,11.26-3.33,29.4-7.38,51.32-7.46.22,0,.44,0,.66,0,33.86,0,83.3,9.79,127.83,56.03,1.94,2.04,44.88,47.96,35.95,121.97,12,5.51,33.14,16.77,53.33,35.21,40.34,36.84,57.51,84.56,49.68,138.03l-.1.6c-.34,1.72-8.63,42.43-43.49,78.12-20.5,20.99-37.49,35.17-75.55,44.33-33.98,7.82-130.71,23.77-176.21-50.13-25.2,14.86-88.03,46.86-161.73,46.86-3.59,0-7.2-.08-10.84-.23-90.93-3.93-143.49-31.38-152.17-36.26-3.29-1.04-17.96-4.67-33.57,6.86-11.42,8.44-15.76,13.65-17.25,15.82,0,0-4.65,7.36-7.87,10.39s-45.22,19.91-97.56,19.92ZM26.49,432.5l.05.1s-.03-.07-.05-.1Z"/><path class="cls-2" d="m312.94,265.54s-155.27-17.25-120.77,151.44"/><path class="cls-2" d="m380.99,197.49s103.52-150.48,193.61,0"/><path class="cls-2" d="m640.74,265.05s183.07-14.84,124.6,156.73"/><path class="cls-1" d="m481.38,915.61c-31.02,0-68.31-8.56-107.97-36.17l-4.6-3.2,1.55-5.38c3.62-12.76,8.29-48.92.03-94.35-9.54-52.48-39.11-132.93-125.82-218.18-3.55-10.49,1.69-12.72,10.97-11.16,90.05,88.52,120.63,172.61,130.43,227.56,8.51,47.7,3.45,81.94.76,94.85,43.38,28.76,88.44,37.26,134,25.27,27.37-7.2,46.77-19.96,54.1-25.32-7.16-65.13,6.45-119.75,19.3-154.4,14.28-38.51,30.43-60.98,31.11-61.91,9.1-2.99,13.19.24,12.66,9.19h0c-.62.86-62.12,87.58-47.03,209.65l.52,4.2-3.23,2.73c-1,.85-24.95,20.86-63.46,30.99-12.3,3.24-26.94,5.63-43.33,5.63Z"/><path class="cls-1" d="m446.45,665.21c-7.33,18.98-18.44,21.46-33.36,7.35-37.53-79.24-109.82-165.35-110.59-166.21l11.63-10.46c2.92,3.25,65.83,73.56,106.24,147.31l12.67-98.37,15.52,2-2.12,118.39Z"/><path class="cls-1" d="m517.88,664.9l-6.73-116.38,15.56-1.65,10.49,99.05c21.87-33.74,70.18-103.56,120.31-144.96l9.97,12.06c-26.57,21.95-57.28,56.58-88.82,100.17-23.92,33.06-25.68,62.76-25.84,63.03-14.87,8.88-26.92,6.71-34.93-11.33Z"/><path class="cls-1" d="m668.03,616.84c-7.11.67-11.29-2.38-11.06-11.06l61.22-61.22,11.06,11.06-61.22,61.22Z"/>
+                  </svg>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title">Vegatable</h3>
+
+                <p class="card-text">
+                  Generally, Prepared in clay oven. Marinated in a delightful delicate spiced yoghurt for 24 hours to tenderise the chicken and give it a seductive flavour and tantalising aroma served with salad and mint sauce.
+                </p>
+
+                <img src="./assets/images/veg.png" width="300" height="300" loading="lazy" alt="French Fry"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 983.41 740.34" width="60" height="60">
+                      <defs>
+                        <style>.cls-1{stroke-width:11px;}.cls-1,.cls-2{fill:none;stroke:#d9272a;stroke-miterlimit:10;}.cls-2{stroke-width:18px;}</style></defs><rect class="cls-1" x="130.43" y="61.57" width="730.26" height="673.27" rx="166.75" ry="166.75"/><rect class="cls-2" x="96.21" y="191.95" width="798.7" height="71.12" rx="30" ry="30"/><path class="cls-2" d="m42.25,333.77h78.11v78.82H42.25c-18.35,0-33.25-14.9-33.25-33.25v-12.32c0-18.35,14.9-33.25,33.25-33.25Z"/><path class="cls-2" d="m901.72,333.77h72.69v78.82h-72.69c-18.35,0-33.25-14.9-33.25-33.25v-12.32c0-18.35,14.9-33.25,33.25-33.25Z" transform="translate(1842.88 746.37) rotate(180)"/><path class="cls-1" d="m500.77-44.74h22.82V111.81h-22.82c-18.35,0-33.25-14.9-33.25-33.25V-11.49c0-18.35,14.9-33.25,33.25-33.25Z" transform="translate(529.09 -462.02) rotate(90)"/></svg>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title">Curry</h3>
+
+                <p class="card-text">
+                    Generally, Prepared in clay oven. Marinated in a delightful delicate spiced yoghurt for 24 hours to tenderise the chicken and give it a seductive flavour and tantalising aroma served with salad and mint sauce.
+                </p>
+
+                <img src="./assets/images/curry.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+            <li class="promo-item">
+              <div class="promo-card">
+
+                <div class="card-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="none"
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 989.14 928.22" width="60" height="60">
+                      <defs>
+                        <style>.cls-1{stroke-width:11px;}.cls-1,.cls-2{fill:#fff;stroke:#d9272a;stroke-miterlimit:10;}.cls-2{stroke-width:18px;}</style></defs><path class="cls-1" d="m6.02,397.6s-28.82,346.26,343.44,476.12v49h288.3v-51.23s331.44-79.96,345.67-473.89H6.02Z"/><path class="cls-2" d="m13.45,392.81s8.05-49.9,56.34-65.99c0,0-24.42-127.79,112.85-129.5,0,0,30.96-158.77,184.78-97.99,0,0,31.34-94.01,140.54-90.21,0,0,86.41,0,122.49,82.61,0,0,168.07-69.36,186.11,109.18,0,0,101.6,13.31,89.26,123.46,0,0,58.14,4.68,65.52,68.44H13.45Z"/><path class="cls-2" d="m639.43,177.93s59.42-21.17,76.65,1.38"/><path class="cls-2" d="m292.88,235.54s16.97-38.79,60.61-36.37"/><path class="cls-2" d="m471.67,270.75s60.61-12.12,77.58,16.97"/><path class="cls-2" d="m457.12,118.01s38.79-29.09,72.73-12.12"/><path class="cls-2" d="m743.21,287.72s63.03-12.12,80.01,24.24"/><path class="cls-2" d="m168.62,324.08s65.46-31.52,105.46,0"/></svg>
+                    <defs>
+                      <clipPath id="A">
+                        <path fill="#fff" d="M0 0h60v60H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+
+                <h3 class="h3 card-title">Rice Bowl</h3>
+
+                <p class="card-text">
+                  Generally, Prepared in clay oven. Marinated in a delightful delicate spiced yoghurt for 24 hours to tenderise the chicken and give it a seductive flavour and tantalising aroma served with salad and mint sauce.
+                </p>
+
+                <img src="./assets/images/rice.png" width="300" height="300" loading="lazy" alt="Chicken Masala"
+                  class="w-100 card-banner">
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+
+          <div class="about-banner">
+            <img src="./assets/images/place.png" width="509" height="459" loading="lazy" alt="Burger with Drinks"
+              class="w-100 about-img">
+
+          </div>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">
+              Balti
+              <span class="span">Cuisine</span>
+            </h2>
+
+            <p class="section-text">
+              Jaflong Balti Cuisine, inspired by the famous waterfall found in Bangladesh under the same name, specialises in serving exquisite Indian/ Bangladeshi styled balti dishes.
+              <br>Please note, any dishes not on the menu can be prepared, on request.</br>
+
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Delicious Foods</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Dishes on request</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Friendly Staff</span>
+              </li>
+
+              <li class="about-item">
+                <ion-icon name="checkmark-outline"></ion-icon>
+
+                <span class="span">Fastest Food Home Delivery</span>
+              </li>
+
+            </ul>
+
+            <a href="tel:01462 487 314" class="btn btn-hover" id="call">Call Now</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #FOOD MENU
+      -->
+
+      <section class="section food-menu" id="food-menu">
+        <div class="container">
+
+          <p class="section-subtitle">Menu</p>
+
+          <h2 class="h2 section-title">
+            Our Delicious <span class="span">Foods</span>
+          </h2>
+
+          <p class="section-text">
+            Menu of our most popular dishes, please enjoy the selection.
+          </p>
+
+          <ul class="fiter-list">
+
+            <li>
+              <button id= "specials" class="filter-btn  active">Specials</button>
+            </li>
+
+          </ul>
+
+          <ul class="food-menu-list">
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/t_chicken.png" width="300" height="300" loading="lazy"
+                    alt="Tandoori Specials" class="w-100">
+
+                  <a href="tel:01462 487 314" class="btn food-menu-btn">Order Now</a>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Rating</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Tandoori Chicken (Full)</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price">£13.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/chicken_jalfrezi.png" width="300" height="300" loading="lazy"
+                    alt="Chicken Jalfrezi" class="w-100">
+
+                  <a href="tel:01462 487 314" class="btn food-menu-btn">Order Now</a>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Rating</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Chicken Jalfrezi</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="29.00">£9.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/chicken_peshwari.png" width="300" height="300" loading="lazy"
+                    alt="Peshwari Chicken" class="w-100">
+
+                  <a href="tel:01462 487 314" class="btn food-menu-btn">Order Now</a>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Rating</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Peshwari Chicken</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">£9.00</data>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/chicken_t_palak.png" width="300" height="300" loading="lazy"
+                    alt="Chicken Tikka Palak" class="w-100">
+
+                  <a href="tel:01462 487 314" class="btn food-menu-btn">Order Now</a>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Rating</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Chicken Tikka Palak</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="59.00 ">£9.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/chicken_razella.png" width="300" height="300" loading="lazy"
+                    alt="Chicken Razella" class="w-100">
+
+                  <a href="tel:01462 487 314" class="btn food-menu-btn">Order Now</a>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Rating</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Chicken Razella</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">£9.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="food-menu-card">
+
+                <div class="card-banner">
+                  <img src="./assets/images/chicken_t_masala.png" width="300" height="300" loading="lazy"
+                    alt="Chicken Tikka Masala" class="w-100">
+
+                 <a href="tel:01462 487 314" class="btn food-menu-btn">Order Now</a>
+                </div>
+
+                <div class="wrapper">
+                  <p class="category">Rating</p>
+
+                  <div class="rating-wrapper">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <h3 class="h3 card-title">Chicken Tikka Masala</h3>
+
+                <div class="price-wrapper">
+
+                  <p class="price-text">Price:</p>
+
+                  <data class="price" value="49.00">£9.00</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #CTA
+      -->
+
+      <section class="section section-divider white cta" style="background-image: url('./assets/images/banner.png')">
+        <div class="container">
+
+          <div class="cta-content">
+
+            <h2 class="h2 section-title">
+              Jaflong
+              <span class="span">Takeaway</span>
+            </h2>
+
+            <p class="section-text">
+              <br>Free Home Delivery within 4 mile radius - minimum order £12.00.</br>
+              <br>10% discount on collection for orders over £20.00.</br>
+              <br>Cards accepted on orders over £10 only after discount (no cheque).</br>
+              <br>Management reserves the right to refuse service.</br>
+              <br>Allergy awareness: If you have nay dietry restriction, e.g. Nuta, Diary Products etc. Please inform us.</br>
+            </p>
+
+          </div>
+
+          <figure class="cta-banner">
+            <img src="./assets/images/chicken_prep.png" loading="lazy" alt="Burger"
+              class="image_j cta-img">
+
+            <img src="./assets/images/cloud.png" width="316" height="326" loading="lazy"
+              alt="get up to 10% off now" class="abs-img scale-up-anim">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #DELIVERY
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="conatiner">
+          <div class="title">
+        <h2 class="section-title">
+          Sets Meals - Only <span class="span">one</span> change per meal
+        </h2>
+      </div>
+      </div>
+        <div class="container">
+
+          <div class="delivery-content">
+
+            <h1 id="title_delivery"class="h2 section-title">
+              Set Meal 1
+            </h1>
+
+            <p class="section-text">
+              This Meal Plan is for one person.
+              <br><span class="span">Starter:</span>2 papadoms, Chicken Tikka</br>
+              <br><span class="span">Main Dish:</span>Chicken Korma or Chicken Bhuna</br>
+              <br><span class="span">Side Dish:</span>Bombay Aloo, Pilau Rice or Nan</br>
+
+            </p>
+
+          </div>
+
+          <div class="delivery_content">
+           <h1 class="h2 section-title">
+            Set Meal 2
+           </h1>
+            <p class="section-text">
+              This Meal Plan is for two people.
+            <br><span class="span">Starter:</span>1 Plain Papadoms, 1 Spicy Papadoms, 1 Vegetable Samosa, Sheek Kebab</br>
+            <br><span class="span">Main Dish:</span>Chicken Tikka Mossala or Chicken Tikka Rogon</br>
+            <br><span class="span">Side Dish:</span>Bombay Aloo, Pilau Rice or Nan</br>
+          </div>
+
+
+      </div>
+      </section>
+
+
+
+
+
+      <!--
+        - #TESTIMONIALS
+      -->
+
+      <section class="section section-divider white testi">
+        <div class="container">
+
+          <p class="section-subtitle">Testimonials</p>
+
+          <h2 class="h2 section-title">
+            Our Customers <span class="span">Reviews</span>
+          </h2>
+
+          <p class="section-text">
+            Our customer's opinions are very important to us. Currently scored
+            <div class="red_circle">4.7</div>
+          </p>
+          <p class="section-text">
+            on our Google rating.
+          </p>
+
+          <ul class="testi-list has-scrollbar">
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/review.jpeg" width="80" height="80" loading="lazy" alt="Claire Cooper">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Claire Cooper</h3>
+
+                    <p class="testi-title">Customer</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "Food is always amazing. Last night we hadn’t ordered a rice and they delivered it to us even though it was my fault. Friendly staff - would thoroughly recommend."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/review.jpeg" width="80" height="80" loading="lazy" alt="Joanne Tate">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Joanne Tate</h3>
+
+                    <p class="testi-title">Customer</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  ";Food is cooked to perfection  and tastes delicious !Love the staff!Delivery time is good and food is always nice and warm  Love their lamb Vindaloo!Thanks guys! X."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testi-item">
+              <div class="testi-card">
+
+                <div class="profile-wrapper">
+
+                  <figure class="avatar">
+                    <img src="./assets/images/review.jpeg" width="80" height="80" loading="lazy" alt="Walter Di Bernardo">
+                  </figure>
+
+                  <div>
+                    <h3 class="h4 testi-name">Walter Di Bernardo</h3>
+
+                    <p class="testi-title">Customer</p>
+                  </div>
+
+                </div>
+
+                <blockquote class="testi-text">
+                  "We had a takeaway tonight and was recommended this take away and what delicious food it was and the portion size is so much."
+                </blockquote>
+
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="contact">
+
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="" class="logo">Jaflong<span class="span">.</span></a>
+
+          <p class="footer-text">
+            Please do not hesitate to contact. This is a takeaway and dine-in options are not available.
+          </p>
+
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Info</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">01462 487 314</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">01462 487 315</p>
+          </li>
+
+          <li>
+            <address class="footer-list-item">3 Ivel Ct, Radburn Way, Letchworth Garden City SG6 2NH</address>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Sunday-Thursday: 05:30pm-11:00pm</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Friday-Saturday: 05:30pm-11:30pm</p>
+          </li>
+
+          <li>
+            <p class="footer-list-item">Seasonal Mondays we are open</p>
+          </li>
+
+        </ul>
+
+
+
       </div>
     </div>
-    <p> <i> Closed on Mondays except Bank Holidays </i> </p>
 
-  </div>
-</div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2023 <a href="#" class="copyright-link">codewithtamya</a> All Rights Reserved.
+        </p>
+      </div>
+    </div>
 
-<!-- Image of location/map -->
-<img src="images/outside.jpg" class="image" style="width:100%;" id="myMap">
+  </footer>
 
-<!-- Contact -->
-<div class="container padding-64 color2 xlarge">
-  <div class="content">
-    <h1 class="center jumbo styleh1" style="margin-bottom:64px">Contact</h1>
-    <p>Find us at 3 Ivelcourt, Radburn Way, Jackmans Estate, Letchworth. SG6 2NH or call us at 01462 487 314/ 01462 487 315</p>
-    <p><span class="tag1">FYI!</span> FREE Home Delivery <i>within 4 mile radius - minimum order £12.00 </i></p><p> 10% discount on collection <i> for orders over £20.00 </i>.</p>
-    <p class="xxlarge"><strong>Cards</strong> accepted on orders over £10 only after discount (no cheques)</p>
-      <p class="xxlarge">Management reserves the right to refuse service. Allergy awareness: If you have nay dietry restrictions, e.g. Nuta, Diary Products etc. Please inform us.</p>
 
-    <br> <br>
-  </div>
-</div>
 
+
+
+  <!--
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script type="text/javascript" src="./assets/js/script.js" defer></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
-<script>
-
-var mySidebar = document.getElementById("show");
-
-//open sidebar when the 3 lines are clicked
-//open is an on-click function
-
-function me_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button or an option is clicked
-function me_close() {
-    mySidebar.style.display = "none";
-}
-
-
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" red", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " red";
-}
-document.getElementById("myLink").click();
-
-</script>
+<script type="text/javascript" src="./assets/js/script.js"></script>
 
 </html>
