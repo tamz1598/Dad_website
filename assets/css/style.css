@@ -1481,6 +1481,14 @@ textarea.input-field {
 
   }
 
+  .header-btn-group .btn {
+    display: block;
+    width: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+  }
+
 
 }
 
