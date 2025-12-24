@@ -1512,7 +1512,7 @@ textarea.input-field {
   }
 
   .hygiene {
-    width: 216px;
+    max-width: 100%;
     height: auto;
     display: block;
   }
