@@ -1511,6 +1511,12 @@ textarea.input-field {
     margin-left: 30%;
   }
 
+  .hygiene {
+    width: 216px;
+    height: auto;
+    display: block;
+  }
+
 }
 
 /**
