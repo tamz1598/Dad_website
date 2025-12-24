@@ -1769,11 +1769,11 @@ textarea.input-field {
     height: auto;
   }
 
-  img.hygiene {
+  .hygiene-rating {
     height: auto;
     max-width: 100%;
-    width:100%;
     object-fit: contain;
+    display: block;
   }
 
   /**
