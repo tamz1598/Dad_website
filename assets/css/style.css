@@ -1760,8 +1760,14 @@ textarea.input-field {
     align-items: center;
     gap: 50px;
   }
-
-
+  
+   /**
+   * HYGIENE IMAGE
+   */
+  .hygiene {
+    max-width: 100%;
+    height: auto;
+  }
 
   /**
    * BANNER
