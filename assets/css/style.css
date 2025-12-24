@@ -1769,6 +1769,10 @@ textarea.input-field {
     height: auto;
   }
 
+  img.hygiene {
+    max-width: 100% !important;
+  }
+
   /**
    * BANNER
    */
